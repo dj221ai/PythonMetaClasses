@@ -31,6 +31,13 @@ class Employee:
         self.__displayDetails()
 
 
+    # public method to set values
+    def set(self, name, age, language):
+        self.__name=name
+        self.__age=age
+        self.__language=language
+
+
 
 emp=Employee("Dhirendra", 30, "Python")
 # print(emp.__dir__())
@@ -38,6 +45,8 @@ emp=Employee("Dhirendra", 30, "Python")
 # accessing the private vairable using mangling in python
 # print(emp._Employee__language)
 
+emp.access()
+emp.set("Ved", 28, "React")
 emp.access()
 
 
